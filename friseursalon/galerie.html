@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Galerie von Haar & Stil München – Haarschnitte, Colorationen, Hochzeitsfrisuren und mehr.">
+<title>Galerie | Haar & Stil München</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,.93); z-index:2000; align-items:center; justify-content:center; padding:2rem; }
+.lightbox.active { display:flex; }
+.lb-img { max-height:90vh; max-width:90vw; border-radius:8px; object-fit:contain; }
+.lb-close { position:fixed; top:1.5rem; right:1.5rem; color:#fff; font-size:2rem; cursor:pointer; background:none; border:none; opacity:.7; transition:.2s; }
+.lb-close:hover { opacity:1; transform:scale(1.1); }
+.lb-prev, .lb-next { position:fixed; top:50%; transform:translateY(-50%); color:#fff; font-size:2rem; cursor:pointer; background:rgba(255,255,255,.1); border:none; padding:.75rem 1rem; border-radius:4px; opacity:.7; transition:.2s; }
+.lb-prev:hover, .lb-next:hover { opacity:1; background:rgba(255,255,255,.2); }
+.lb-prev { left:1rem; }
+.lb-next { right:1rem; }
+</style>
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">Haar <span>&</span> Stil</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Startseite</a></li>
+        <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+        <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+        <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+        <li><a href="kontakt.html" class="nav-link nav-cta">Termin buchen</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="ph-inner">
+    <span class="section-label">Galerie</span>
+    <h1>Unsere Arbeit</h1>
+    <p>Lassen Sie sich von unseren Kreationen inspirieren – real, unbearbeitet, authentisch.</p>
+    <nav class="breadcrumb"><a href="index.html">Startseite</a><span class="breadcrumb-sep">/</span><span>Galerie</span></nav>
+  </div></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="gallery-grid" id="gallery">
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=500&q=80" alt="Salonansicht" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1522337360826-0b66cec58d9a?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1522337360826-0b66cec58d9a?auto=format&fit=crop&w=500&q=80" alt="Haarschnitt" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=500&q=80" alt="Coloration" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=500&q=80" alt="Haarwaschen" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1527799820374-87791c105e04?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1527799820374-87791c105e04?auto=format&fit=crop&w=500&q=80" alt="Föhnen und Styling" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=500&q=80" alt="Highlights" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=500&q=80" alt="Braut Styling" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=500&q=80" alt="Herrenschnitt" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=500&q=80" alt="Herrenschnitt modern" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1521146764736-56c929d59c83?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1521146764736-56c929d59c83?auto=format&fit=crop&w=500&q=80" alt="Balayage Ergebnis" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=500&q=80" alt="Fertig gestylt" loading="lazy">
+      </div>
+      <div class="gal-item" data-src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=500&q=80" alt="Curls & Locken" loading="lazy">
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem">
+      <p style="color:var(--text-light);margin-bottom:1.5rem">Mehr Inspirationen finden Sie auf unserem Instagram-Kanal.</p>
+      <a href="#" class="btn btn-dark"><i class="fab fa-instagram" style="margin-right:.5rem"></i>@haarundstil_muc</a>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+  <button class="lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+  <img src="" alt="" class="lb-img" id="lbImg">
+  <button class="lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Hat Ihnen etwas gefallen?</h2>
+    <p>Buchen Sie jetzt und wir kreieren Ihren persönlichen Wunschlook.</p>
+    <a href="kontakt.html" class="btn btn-primary btn-lg">Termin vereinbaren</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="display:block;margin-bottom:.75rem">Haar <span>&</span> Stil</a>
+        <p class="footer-brand-text">Premium Friseursalon in München Schwabing.</p>
+        <div class="socials">
+          <a href="#" class="soc"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-h">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <p class="footer-h">Kontakt</p>
+        <div class="footer-ci"><i class="fas fa-phone"></i><a href="tel:08912345678">089 / 12 34 56 78</a></div>
+        <div class="footer-ci"><i class="fas fa-map-marker-alt"></i><span>Leopoldstraße 48, München</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Haar & Stil GmbH</p>
+      <div class="footer-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/4989123456789" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  const nav=document.getElementById('navbar'),hbg=document.getElementById('hamburger'),menu=document.getElementById('navMenu');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+  hbg.addEventListener('click',()=>{hbg.classList.toggle('open');menu.classList.toggle('open');document.body.style.overflow=menu.classList.contains('open')?'hidden':'';});
+  menu.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{hbg.classList.remove('open');menu.classList.remove('open');document.body.style.overflow='';}));
+
+  // Lightbox
+  const items = [...document.querySelectorAll('.gal-item')];
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  let current = 0;
+  const open = i => { current=i; lbImg.src=items[i].dataset.src; lb.classList.add('active'); document.body.style.overflow='hidden'; };
+  const close = () => { lb.classList.remove('active'); document.body.style.overflow=''; };
+  items.forEach((el,i) => el.addEventListener('click', () => open(i)));
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', () => open((current-1+items.length)%items.length));
+  document.getElementById('lbNext').addEventListener('click', () => open((current+1)%items.length));
+  lb.addEventListener('click', e => { if(e.target===lb) close(); });
+  document.addEventListener('keydown', e => {
+    if(!lb.classList.contains('active')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowLeft') open((current-1+items.length)%items.length);
+    if(e.key==='ArrowRight') open((current+1)%items.length);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kontakt & Angebot – Blitz Elektro GmbH Hamburg. 24/7 Notdienst: 040 / 987 654 32. Kostenlose Angebote für alle Elektroarbeiten.">
+<title>Kontakt & Angebot | Blitz Elektro GmbH Hamburg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="emergency-bar"><i class="fas fa-bolt"></i> 24/7 NOTDIENST: <a href="tel:04098765432">040 / 987 654 32</a></div>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-bolt"></i></div>Blitz Elektro</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Startseite</a></li>
+        <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+        <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+        <li><a href="kontakt.html" class="nav-link active nav-cta">Kostenloses Angebot</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="ph-inner">
+    <span class="section-label">Kontakt</span>
+    <h1>Kostenloses Angebot anfordern</h1>
+    <p>Füllen Sie das Formular aus – wir melden uns innerhalb von 4 Stunden (Notfall: sofort).</p>
+    <nav class="breadcrumb"><a href="index.html">Startseite</a><span class="breadcrumb-sep">/</span><span>Kontakt</span></nav>
+  </div></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-wrap">
+      <div>
+        <!-- NOTFALL BOX -->
+        <div class="emergency-box">
+          <h3><i class="fas fa-exclamation-triangle"></i>Elektro-Notfall?</h3>
+          <p>Bei Stromausfall, Kurzschluss oder anderen Notfällen – rufen Sie uns sofort an. Wir sind 24/7 erreichbar und in Hamburg meist innerhalb 60 Minuten vor Ort.</p>
+          <a href="tel:04098765432">040 / 987 654 32</a>
+        </div>
+
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Büro & Werkstatt</h4>
+            <p>Wandsbeker Chaussee 156<br>22089 Hamburg (Wandsbek)</p>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Telefon</h4>
+            <a href="tel:04098765432" style="font-size:1.1rem;font-weight:700;color:var(--primary)">040 / 987 654 32</a>
+            <p style="margin-top:.2rem">Büro: Mo–Fr 7–18 Uhr · Notdienst: 24/7</p>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>E-Mail</h4>
+            <a href="mailto:info@blitz-elektro-hamburg.de">info@blitz-elektro-hamburg.de</a>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Bürozeiten</h4>
+            <div class="hours-table" style="margin-top:.25rem">
+              <span class="ht-day">Mo–Fr</span><span class="ht-time">07:00 – 18:00 Uhr</span>
+              <span class="ht-day">Samstag</span><span class="ht-time">08:00 – 14:00 Uhr</span>
+              <span class="ht-day">Notdienst</span><span class="ht-time">24 / 7 / 365</span>
+            </div>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-subway"></i></div>
+          <div>
+            <h4>Anfahrt</h4>
+            <p>U-Bahn U1 Wandsbek-Markt (8 Min. zu Fuß)<br>Kostenlose Parkplätze vor dem Gebäude</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3 style="margin-bottom:.5rem;color:var(--primary)">Angebot anfordern</h3>
+        <p style="color:var(--text-light);font-size:.88rem;margin-bottom:1.75rem">Alle mit * markierten Felder sind Pflichtfelder. Antwort innerhalb von 4 Stunden (Werktags).</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="vorname">Vorname *</label>
+              <input type="text" class="form-control" id="vorname" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachname">Nachname *</label>
+              <input type="text" class="form-control" id="nachname" placeholder="Mustermann" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">E-Mail *</label>
+            <input type="email" class="form-control" id="email" placeholder="max@beispiel.de" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="telefon">Telefon *</label>
+            <input type="tel" class="form-control" id="telefon" placeholder="040 / ..." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="leistung">Gewünschte Leistung *</label>
+            <select class="form-control" id="leistung" required>
+              <option value="">Bitte auswählen...</option>
+              <option>Hausinstallation / Sanierung</option>
+              <option>Photovoltaik-Anlage</option>
+              <option>Wallbox / E-Ladelösung</option>
+              <option>Smart Home</option>
+              <option>Sicherheitstechnik</option>
+              <option>Notdienst / Reparatur</option>
+              <option>Gewerbe / Industrie</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="adresse">Ausführungsadresse</label>
+            <input type="text" class="form-control" id="adresse" placeholder="Straße, PLZ Hamburg">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="nachricht">Beschreibung des Vorhabens *</label>
+            <textarea class="form-control" id="nachricht" placeholder="Bitte beschreiben Sie kurz, was gemacht werden soll. Je mehr Details, desto präziser unser Angebot." required></textarea>
+          </div>
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:.75rem">
+            <input type="checkbox" id="datenschutz" style="margin-top:3px;flex-shrink:0">
+            <label for="datenschutz" style="font-size:.82rem;color:var(--text-light)">Ich habe die <a href="#" style="color:var(--accent)">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme zu. *</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%"><i class="fas fa-paper-plane"></i>Angebot anfordern</button>
+        </form>
+        <div id="successMsg" style="display:none;background:var(--accent-light);border:1px solid rgba(245,166,35,.4);border-radius:var(--radius);padding:1.5rem;margin-top:1rem;text-align:center">
+          <i class="fas fa-check-circle" style="color:var(--accent-dark);font-size:2rem;display:block;margin-bottom:.5rem"></i>
+          <strong>Anfrage eingegangen!</strong><br><span style="font-size:.9rem;color:var(--text-light)">Wir melden uns innerhalb von 4 Stunden bei Ihnen.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-wrap" style="margin-top:4rem">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.1!2d10.0577!3d53.5734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWandsbeker+Chaussee+156%2C+22089+Hamburg!5e0!3m2!1sde!2sde!4v1700000000000"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Standort Blitz Elektro Hamburg"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><div class="logo-icon"><i class="fas fa-bolt"></i></div>Blitz Elektro</div>
+        <p class="footer-brand-text">Elektriker-Meisterbetrieb in Hamburg seit 2001.</p>
+        <div class="socials"><a href="#" class="soc"><i class="fab fa-facebook-f"></i></a><a href="#" class="soc"><i class="fab fa-google"></i></a></div>
+      </div>
+      <div>
+        <p class="footer-h">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <p class="footer-h">Kontakt</p>
+        <div class="footer-ci"><i class="fas fa-phone"></i><a href="tel:04098765432">040 / 987 654 32</a></div>
+        <div class="footer-ci"><i class="fas fa-map-marker-alt"></i><span>Wandsbeker Chaussee 156, Hamburg</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Blitz Elektro GmbH</p>
+      <div class="footer-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:04098765432" class="phone-float"><i class="fas fa-phone-alt"></i><span>Notdienst</span></a>
+
+<script>
+  const nav=document.getElementById('navbar'),hbg=document.getElementById('hamburger'),menu=document.getElementById('navMenu');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+  hbg.addEventListener('click',()=>{hbg.classList.toggle('open');menu.classList.toggle('open');document.body.style.overflow=menu.classList.contains('open')?'hidden':'';});
+  menu.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{hbg.classList.remove('open');menu.classList.remove('open');document.body.style.overflow='';}));
+  document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('successMsg').style.display='block';});
+</script>
+</body>
+</html>

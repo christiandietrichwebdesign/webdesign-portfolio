@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kontakt & Terminbuchung – Haar & Stil Friseursalon München, Leopoldstraße 48. Rufen Sie an oder schreiben Sie uns.">
+<title>Kontakt & Termin | Haar & Stil München</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">Haar <span>&</span> Stil</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Startseite</a></li>
+        <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+        <li><a href="leistungen.html" class="nav-link">Leistungen</a></li>
+        <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+        <li><a href="kontakt.html" class="nav-link active nav-cta">Termin buchen</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container"><div class="ph-inner">
+    <span class="section-label">Kontakt</span>
+    <h1>Termin vereinbaren</h1>
+    <p>Wir freuen uns auf Ihren Besuch – online buchen oder einfach anrufen.</p>
+    <nav class="breadcrumb"><a href="index.html">Startseite</a><span class="breadcrumb-sep">/</span><span>Kontakt</span></nav>
+  </div></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-wrap">
+      <!-- Infos -->
+      <div>
+        <span class="section-label">Finden Sie uns</span>
+        <h2 style="margin-bottom:2rem">Wir sind für Sie da</h2>
+
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Adresse</h4>
+            <p>Leopoldstraße 48<br>80802 München (Schwabing)<br><a href="#map" style="color:var(--accent)">Auf Karte zeigen →</a></p>
+          </div>
+        </div>
+
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Telefon</h4>
+            <a href="tel:08912345678" style="font-size:1.1rem;font-weight:600;color:var(--text)">089 / 12 34 56 78</a>
+            <p style="margin-top:.25rem">Gerne auch per WhatsApp!</p>
+          </div>
+        </div>
+
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>E-Mail</h4>
+            <a href="mailto:info@haar-und-stil-muenchen.de">info@haar-und-stil-muenchen.de</a>
+          </div>
+        </div>
+
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Öffnungszeiten</h4>
+            <div class="hours-table">
+              <span class="ht-day">Montag</span>    <span class="ht-time">9:00 – 19:00 Uhr</span>
+              <span class="ht-day">Dienstag</span>  <span class="ht-time">9:00 – 19:00 Uhr</span>
+              <span class="ht-day">Mittwoch</span>  <span class="ht-time">9:00 – 19:00 Uhr</span>
+              <span class="ht-day">Donnerstag</span><span class="ht-time">9:00 – 20:00 Uhr</span>
+              <span class="ht-day">Freitag</span>   <span class="ht-time">9:00 – 19:00 Uhr</span>
+              <span class="ht-day">Samstag</span>   <span class="ht-time">9:00 – 17:00 Uhr</span>
+              <span class="ht-day">Sonntag</span>   <span class="ht-time">Geschlossen</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci">
+          <div class="ci-icon"><i class="fas fa-subway"></i></div>
+          <div>
+            <h4>Anfahrt</h4>
+            <p>U-Bahn: U3/U6 Münchner Freiheit (5 Min. zu Fuß)<br>Parkplätze in der Leopoldstraße & Tiefgarage Schwabing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formular -->
+      <div class="contact-form">
+        <h3 style="margin-bottom:1.5rem;font-size:1.5rem">Terminanfrage senden</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="vorname">Vorname *</label>
+              <input type="text" class="form-control" id="vorname" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachname">Nachname *</label>
+              <input type="text" class="form-control" id="nachname" placeholder="Mustermann" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">E-Mail *</label>
+            <input type="email" class="form-control" id="email" placeholder="max@beispiel.de" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="telefon">Telefon</label>
+            <input type="tel" class="form-control" id="telefon" placeholder="089 / ...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="leistung">Gewünschte Leistung *</label>
+            <select class="form-control" id="leistung" required>
+              <option value="">Bitte auswählen...</option>
+              <option>Damenschnitt & Styling</option>
+              <option>Herrenschnitt</option>
+              <option>Coloration / Balayage</option>
+              <option>Hochzeitsfrisur</option>
+              <option>Haarpflege-Behandlung</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="datum">Wunschdatum</label>
+              <input type="date" class="form-control" id="datum">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="uhrzeit">Uhrzeit</label>
+              <select class="form-control" id="uhrzeit">
+                <option value="">Keine Präferenz</option>
+                <option>9:00 – 11:00 Uhr</option>
+                <option>11:00 – 13:00 Uhr</option>
+                <option>13:00 – 16:00 Uhr</option>
+                <option>16:00 – 19:00 Uhr</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="nachricht">Nachricht / Besondere Wünsche</label>
+            <textarea class="form-control" id="nachricht" placeholder="Ich hätte gerne..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+            <i class="fas fa-paper-plane" style="margin-right:.5rem"></i>Anfrage absenden
+          </button>
+          <p style="font-size:.78rem;color:var(--text-light);margin-top:.75rem;margin-bottom:0">* Pflichtfelder. Wir melden uns innerhalb von 24 Stunden.</p>
+        </form>
+        <div id="successMsg" style="display:none;background:var(--accent-light);border:1px solid rgba(201,168,76,.4);border-radius:8px;padding:1.5rem;margin-top:1rem;text-align:center">
+          <i class="fas fa-check-circle" style="color:var(--accent-dark);font-size:2rem;margin-bottom:.5rem;display:block"></i>
+          <strong>Vielen Dank!</strong><br>Wir haben Ihre Anfrage erhalten und melden uns bald.
+        </div>
+      </div>
+    </div>
+
+    <!-- Karte -->
+    <div class="map-wrap" id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8789!2d11.5798!3d48.1644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e759e46b0e4e5%3A0x1!2sLeopoldsstra%C3%9Fe+48%2C+80802+M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Standort Haar & Stil München"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="display:block;margin-bottom:.75rem">Haar <span>&</span> Stil</a>
+        <p class="footer-brand-text">Premium Friseursalon in München Schwabing.</p>
+        <div class="socials">
+          <a href="#" class="soc"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-h">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <p class="footer-h">Kontakt</p>
+        <div class="footer-ci"><i class="fas fa-phone"></i><a href="tel:08912345678">089 / 12 34 56 78</a></div>
+        <div class="footer-ci"><i class="fas fa-map-marker-alt"></i><span>Leopoldstraße 48, München</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Haar & Stil GmbH</p>
+      <div class="footer-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/4989123456789" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  const nav=document.getElementById('navbar'),hbg=document.getElementById('hamburger'),menu=document.getElementById('navMenu');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+  hbg.addEventListener('click',()=>{hbg.classList.toggle('open');menu.classList.toggle('open');document.body.style.overflow=menu.classList.contains('open')?'hidden':'';});
+  menu.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{hbg.classList.remove('open');menu.classList.remove('open');document.body.style.overflow='';}));
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  });
+</script>
+</body>
+</html>

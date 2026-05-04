@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Speisekarte – Zur Alten Mühle Freiburg. Badische Küche, Mittagstisch, Vorspeisen, Hauptgerichte, Desserts, Weine.">
+<title>Speisekarte | Zur Alten Mühle Freiburg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">Zur Alten <span>Mühle</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Startseite</a></li>
+        <li><a href="speisekarte.html" class="nav-link active">Speisekarte</a></li>
+        <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+        <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        <li><a href="reservierung.html" class="nav-link nav-cta">Tisch reservieren</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero" style="padding:8rem 0 3.5rem">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80')"></div>
+  <div class="container"><div class="ph-inner">
+    <span class="section-label">Speisekarte</span>
+    <h1>Was unsere Küche erzählt</h1>
+    <p>Täglich frisch, saisonal, regional – von Chef Jonas Vogel.</p>
+    <nav class="breadcrumb"><a href="index.html">Startseite</a><span class="breadcrumb-sep">/</span><span>Speisekarte</span></nav>
+  </div></div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Legende -->
+    <div style="background:var(--gold-light);border:1px solid rgba(201,168,76,.3);border-radius:var(--radius-lg);padding:1.25rem 1.75rem;margin-bottom:3rem;display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center">
+      <strong style="font-size:.85rem;color:var(--primary)">Kennzeichnungen:</strong>
+      <span class="mi-badge vegan" style="font-size:.75rem">🌱 Vegan</span>
+      <span class="mi-badge veggie" style="font-size:.75rem">🥦 Vegetarisch</span>
+      <span class="mi-badge hot" style="font-size:.75rem">🌶 Scharf</span>
+      <span style="font-size:.8rem;color:var(--text-light)">Alle Gerichte können Allergene enthalten. Fragen Sie uns gerne.</span>
+    </div>
+
+    <!-- VORSPEISEN -->
+    <div class="menu-section">
+      <h2 class="menu-section-title">Vorspeisen</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Badischer Feldsalat</p>
+            <p class="mi-desc">Mit Walnüssen, Speckwürfeln und hausgemachtem Speck-Balsamico-Dressing. Auf Wunsch ohne Speck.</p>
+            <div class="mi-badges"><span class="mi-badge veggie">🥦 Vegetarisch möglich</span></div>
+          </div>
+          <span class="mi-price">9,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Elsässischer Flammkuchen</p>
+            <p class="mi-desc">Klassisch mit crème fraîche, Lardons und Zwiebeln. Auch als Variante mit Ziegenkäse & Trauben.</p>
+          </div>
+          <span class="mi-price">14,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Hausgemachte Leberknödelsuppe</p>
+            <p class="mi-desc">Kräftige Rindsuppe mit zwei großen Leberschnödeln und frischem Schnittlauch.</p>
+          </div>
+          <span class="mi-price">8,50 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Kürbiscremesuppe</p>
+            <p class="mi-desc">Saisonal · Mit Ingwer, Kokosmilch und gerösteten Kürbiskernen.</p>
+            <div class="mi-badges"><span class="mi-badge vegan">🌱 Vegan</span></div>
+          </div>
+          <span class="mi-price">8,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Hausgebeizter Lachs</p>
+            <p class="mi-desc">48h selbst gebeizt, serviert mit Dillcreme, Kapernapfel-Salat und Schwarzbrot-Crostini.</p>
+          </div>
+          <span class="mi-price">16,50 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HAUPTGERICHTE -->
+    <div class="menu-section">
+      <h2 class="menu-section-title">Hauptgerichte</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Badischer Zwiebelrostbraten</p>
+            <p class="mi-desc">Rinderhüftsteak (180g) vom Schwarzwälder Weiderind, karamellisierte Zwiebeln, Bratkartoffeln, Bratenjus.</p>
+          </div>
+          <span class="mi-price">26,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Handgemachte Maultaschen</p>
+            <p class="mi-desc">In Brühe oder gebraten mit Zwiebeln · Gefüllt mit Spinat & Kalbfleisch nach Hausrezept.</p>
+          </div>
+          <span class="mi-price">18,50 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Schwarzwälder Forelle</p>
+            <p class="mi-desc">Ganze Forellenfilets aus regionaler Zucht, Mandelbuttersauce, Kartoffelgratin, Saison-Gemüse.</p>
+          </div>
+          <span class="mi-price">23,50 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Kalbsschnitzel Wiener Art</p>
+            <p class="mi-desc">Hausgebacken, mit Petersilienkartoffeln, Preiselbeeren und einem Streifen Zitrone.</p>
+          </div>
+          <span class="mi-price">24,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Veganer Linsentopf</p>
+            <p class="mi-desc">Schwarze Linsen mit Karotten, Sellerie, Schwarzwälder Räuchertofu und frischem Brot.</p>
+            <div class="mi-badges"><span class="mi-badge vegan">🌱 Vegan</span></div>
+          </div>
+          <span class="mi-price">17,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Tagliatelle mit Steinpilz-Ragù</p>
+            <p class="mi-desc">Handgemachte Pasta · Frische Steinpilze, Walnüsse, Pecorino, Basilikum-Öl.</p>
+            <div class="mi-badges"><span class="mi-badge veggie">🥦 Vegetarisch</span></div>
+          </div>
+          <span class="mi-price">19,90 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MITTAGSTISCH -->
+    <div class="menu-section">
+      <h2 class="menu-section-title">Mittagstisch (Di–Fr, 11:30–14:30)</h2>
+      <div style="background:var(--gold-light);border-radius:var(--radius-lg);padding:1.25rem 1.75rem;margin-bottom:1.25rem">
+        <p style="margin:0;font-size:.9rem;color:var(--primary)"><i class="fas fa-info-circle" style="color:var(--gold);margin-right:.5rem"></i>Alle Mittagsgerichte inkl. Salatbeilage und Brot. Täglich 3 Gerichte zur Auswahl (auf Tafel sichtbar).</p>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Tagesgericht (wechselnd)</p>
+            <p class="mi-desc">Frisch auf der Tafel – immer 1× Fleisch, 1× Fisch, 1× Vegetarisch</p>
+          </div>
+          <span class="mi-price">ab 12,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Mittagsmenü 2 Gänge</p>
+            <p class="mi-desc">Suppe des Tages + Tagesgericht</p>
+          </div>
+          <span class="mi-price">17,90 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-section">
+      <h2 class="menu-section-title">Desserts</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Schwarzwälder Kirschtorte</p>
+            <p class="mi-desc">Original-Hausrezept · Schokoladenbiskuit, Kirsch-Compote, frische Sahne.</p>
+          </div>
+          <span class="mi-price">7,50 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Badische Apfelküchle</p>
+            <p class="mi-desc">Im Ausbackteig frittierte Äpfel aus dem Breisgau, Zimtzucker, Vanilleeis.</p>
+            <div class="mi-badges"><span class="mi-badge veggie">🥦 Vegetarisch</span></div>
+          </div>
+          <span class="mi-price">8,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Mousse au Chocolat</p>
+            <p class="mi-desc">Hausgemacht aus 72%-Schokolade, mit Himbeersauce und Rocher-Garnitur.</p>
+            <div class="mi-badges"><span class="mi-badge veggie">🥦 Vegetarisch</span></div>
+          </div>
+          <span class="mi-price">7,90 €</span>
+        </div>
+        <div class="menu-item">
+          <div class="mi-info">
+            <p class="mi-name">Käseteller Badisch</p>
+            <p class="mi-desc">Auswahl regionaler Käsesorten mit Trauben, Feigensenf und Vollkornbrot.</p>
+          </div>
+          <span class="mi-price">12,90 €</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem">
+      <h3 style="color:var(--primary);margin-bottom:1rem">Appetit bekommen?</h3>
+      <p style="color:var(--text-light);margin-bottom:2rem">Reservieren Sie jetzt Ihren Tisch – wir freuen uns auf Sie.</p>
+      <a href="reservierung.html" class="btn btn-gold btn-lg"><i class="fas fa-calendar-alt"></i>Tisch reservieren</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">Zur Alten <span>Mühle</span></a>
+        <p class="footer-brand-text">Badische Küche mit Herzblut – seit 1987 in Freiburg.</p>
+        <div class="socials"><a href="#" class="soc"><i class="fab fa-instagram"></i></a><a href="#" class="soc"><i class="fab fa-facebook-f"></i></a><a href="#" class="soc"><i class="fab fa-tripadvisor"></i></a></div>
+      </div>
+      <div>
+        <p class="footer-h">Navigation</p>
+        <ul class="footer-nav">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="reservierung.html">Reservierung</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <p class="footer-h">Öffnungszeiten</p>
+        <div class="footer-ci"><i class="fas fa-clock"></i><span>Di–So: 11:30 – 22:30 Uhr<br>Montag: Ruhetag</span></div>
+        <div class="footer-ci"><i class="fas fa-phone"></i><a href="tel:076134567890">0761 / 34 56 789</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Zur Alten Mühle · Familie Vogel</p>
+      <div class="footer-legal"><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">Allergene</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="reservierung.html" class="res-float"><i class="fas fa-calendar-alt"></i><span>Reservieren</span></a>
+
+<script>
+  const nav=document.getElementById('navbar'),hbg=document.getElementById('hamburger'),menu=document.getElementById('navMenu');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60));
+  hbg.addEventListener('click',()=>{hbg.classList.toggle('open');menu.classList.toggle('open');document.body.style.overflow=menu.classList.contains('open')?'hidden':'';});
+  menu.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{hbg.classList.remove('open');menu.classList.remove('open');document.body.style.overflow='';}));
+</script>
+</body>
+</html>

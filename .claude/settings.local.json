@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Recurse \"c:\\\\Users\\\\Christian\\\\Desktop\\\\Christian\\\\AA Websiten erstellen\" | Where-Object {!$_.PSIsContainer} | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}} | Sort-Object Name)",
+      "PowerShell(Get-ChildItem -Recurse \"c:\\\\Users\\\\Christian\\\\Desktop\\\\Christian\\\\AA Websiten erstellen\" -File | ForEach-Object { \"$\\($_.DirectoryName.Split\\('\\\\'\\)[-1]\\)/$\\($_.Name\\) – $\\([math]::Round\\($_.Length/1KB,1\\)\\) KB\" })",
+      "WebFetch(domain:docs.github.com)",
+      "Bash(git --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)"
+    ]
+  }
+}
