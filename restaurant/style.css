@@ -296,6 +296,9 @@ textarea.form-control { resize:vertical; min-height:110px; }
 .res-float:hover { background:#a93226; transform:scale(1.05); }
 .res-float i { font-size:1rem; }
 
+/* Timeline section (ueber-uns) */
+.timeline-section { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
+
 /* RESPONSIVE */
 @media(max-width:1024px) {
     .footer-grid { grid-template-columns:1fr 1fr; }
@@ -321,4 +324,17 @@ textarea.form-control { resize:vertical; min-height:110px; }
     .footer-legal  { flex-wrap:wrap; justify-content:center; }
     .res-float span { display:none; }
     .res-float { padding:.85rem; border-radius:50%; }
+    .timeline-section { grid-template-columns:1fr; gap:2.5rem; }
+}
+@media(max-width:480px) {
+    .container { padding:0 1rem; }
+    .section { padding:2.75rem 0; }
+    .page-hero { padding:7rem 0 2.5rem; }
+    .hero-btns .btn-lg { padding:.8rem 1.5rem; font-size:.88rem; width:100%; justify-content:center; }
+    .hero-info { gap:1.25rem; }
+    .contact-form { padding:1.5rem; }
+    .testi-grid { grid-template-columns:1fr; }
+    .dishes-grid { grid-template-columns:1fr; }
+    .menu-item { flex-direction:column; align-items:flex-start; gap:.5rem; }
+    .mi-price { font-size:1rem; }
 }
