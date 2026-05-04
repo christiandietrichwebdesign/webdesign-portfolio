@@ -3,94 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Webdesign-Portfolio – Professionelle Websites für lokale Kleinunternehmen. 3 Beispiel-Websites für Friseursalon, Elektriker und Restaurant.">
-<title>Webdesign Portfolio | Professionelle Websites für Kleinunternehmen</title>
+<meta name="description" content="Christian Dietrich – Webdesign für lokale Kleinunternehmen aus Bayreuth. Professionelle Websites, faire Preise.">
+<title>Christian Dietrich · Webdesign Bayreuth</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 :root {
     --bg:      #0a0f1e;
     --bg2:     #111827;
-    --bg3:     #1a2235;
     --accent:  #6366f1;
     --accent2: #8b5cf6;
-    --green:   #10b981;
     --text:    #e5e7eb;
     --text-m:  #9ca3af;
     --white:   #fff;
     --border:  rgba(255,255,255,.08);
     --ease:    all 0.3s ease;
     --radius:  10px;
-    --max:     1200px;
+    --max:     1100px;
 }
+
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { font-family:'Inter', system-ui, sans-serif; color:var(--text); background:var(--bg); line-height:1.65; overflow-x:hidden; }
 img { max-width:100%; height:auto; display:block; }
 a { text-decoration:none; color:inherit; }
-h1,h2,h3 { line-height:1.2; }
 p { margin-bottom:1rem; }
 
 .container { max-width:var(--max); margin:0 auto; padding:0 1.5rem; }
-.section    { padding:5rem 0; }
 
-/* HEADER */
+/* ── HEADER ── */
 header {
-    padding:1.5rem 0;
+    padding:1.25rem 0;
     border-bottom:1px solid var(--border);
-    background:rgba(10,15,30,.95);
+    background:rgba(10,15,30,.97);
     backdrop-filter:blur(12px);
     position:sticky; top:0; z-index:100;
 }
-.header-inner { display:flex; align-items:center; justify-content:space-between; }
-.site-logo { font-weight:800; font-size:1.15rem; color:var(--white); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.site-logo { font-weight:800; font-size:1.1rem; color:var(--white); }
 .site-logo span { color:var(--accent); }
-.header-right { display:flex; align-items:center; gap:1rem; }
-.header-tel { color:var(--text-m); font-size:.85rem; font-weight:600; transition:var(--ease); display:flex; align-items:center; gap:.4rem; }
-.header-tel:hover { color:var(--white); }
-.header-cta { background:var(--accent); color:var(--white); padding:.55rem 1.25rem; border-radius:6px; font-weight:700; font-size:.85rem; transition:var(--ease); }
-.header-cta:hover { background:var(--accent2); transform:translateY(-1px); }
-
-/* HERO */
-.hero {
-    padding:6rem 0 5rem; text-align:center;
-    background:radial-gradient(ellipse at 60% 0%, rgba(99,102,241,.15) 0%, transparent 60%),
-               radial-gradient(ellipse at 20% 100%, rgba(139,92,246,.1) 0%, transparent 50%);
+.header-right { display:flex; align-items:center; gap:1.25rem; }
+.header-tel {
+    color:var(--text-m); font-size:.85rem; font-weight:600;
+    transition:var(--ease); display:flex; align-items:center; gap:.4rem;
 }
-.hero-badge {
+.header-tel:hover { color:var(--white); }
+.header-mail {
+    background:var(--accent); color:var(--white);
+    padding:.5rem 1.1rem; border-radius:6px;
+    font-weight:700; font-size:.85rem; transition:var(--ease);
+}
+.header-mail:hover { background:var(--accent2); transform:translateY(-1px); }
+
+/* ── HERO ── */
+.hero {
+    padding:6rem 0 5rem;
+    background:radial-gradient(ellipse at 65% 0%, rgba(99,102,241,.13) 0%, transparent 60%);
+}
+.hero-inner { max-width:680px; }
+.hero-label {
     display:inline-flex; align-items:center; gap:.5rem;
     background:rgba(99,102,241,.1); border:1px solid rgba(99,102,241,.3);
-    color:#a5b4fc; padding:.4rem 1rem; border-radius:50px;
-    font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
-    margin-bottom:1.75rem;
+    color:#a5b4fc; padding:.35rem .9rem; border-radius:50px;
+    font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    margin-bottom:1.5rem;
 }
 .hero h1 {
-    font-size:clamp(2.2rem,6vw,4rem); font-weight:800; color:var(--white);
-    margin-bottom:1.25rem; letter-spacing:-.02em;
+    font-size:clamp(2rem,5.5vw,3.5rem); font-weight:800; color:var(--white);
+    letter-spacing:-.02em; line-height:1.15; margin-bottom:1.25rem;
 }
-.hero h1 span { background:linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-.hero p { font-size:1.15rem; color:var(--text-m); max-width:600px; margin:0 auto 2.5rem; }
-.hero-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
-.btn { display:inline-flex; align-items:center; gap:.5rem; padding:.85rem 2rem; border-radius:var(--radius); font-weight:700; font-size:.93rem; cursor:pointer; transition:var(--ease); border:none; }
-.btn-accent { background:linear-gradient(135deg,var(--accent),var(--accent2)); color:var(--white); }
-.btn-accent:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(99,102,241,.4); }
-.btn-ghost  { background:rgba(255,255,255,.06); color:var(--text); border:1px solid var(--border); }
-.btn-ghost:hover  { background:rgba(255,255,255,.1); color:var(--white); }
+.hero h1 span {
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.hero p { font-size:1.05rem; color:var(--text-m); max-width:520px; margin-bottom:2rem; }
+.hero-btns { display:flex; gap:.75rem; flex-wrap:wrap; }
+.btn {
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.8rem 1.75rem; border-radius:var(--radius);
+    font-weight:700; font-size:.9rem; cursor:pointer;
+    transition:var(--ease); border:1px solid transparent;
+}
+.btn-accent { background:linear-gradient(135deg,var(--accent),var(--accent2)); color:var(--white); border-color:transparent; }
+.btn-accent:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(99,102,241,.35); }
+.btn-ghost  { background:rgba(255,255,255,.05); color:var(--text); border-color:var(--border); }
+.btn-ghost:hover  { background:rgba(255,255,255,.09); color:var(--white); }
 
-/* STATS ROW */
-.stats-row { display:flex; justify-content:center; gap:4rem; flex-wrap:wrap; margin-top:4rem; padding-top:4rem; border-top:1px solid var(--border); }
-.stat { text-align:center; }
-.stat-num   { font-size:2.2rem; font-weight:800; color:var(--white); line-height:1; margin-bottom:.3rem; }
-.stat-label { font-size:.82rem; color:var(--text-m); }
+/* ── PROJEKTE ── */
+.section { padding:5rem 0; }
+.section-label {
+    font-size:.72rem; font-weight:700; letter-spacing:.2em;
+    text-transform:uppercase; color:var(--accent); display:block; margin-bottom:.6rem;
+}
+.section-title { font-size:clamp(1.5rem,3.5vw,2.2rem); font-weight:800; color:var(--white); margin-bottom:.6rem; }
+.section-sub   { color:var(--text-m); font-size:.95rem; max-width:520px; margin-bottom:3rem; }
 
-/* PROJECTS */
-.projects { display:grid; gap:2rem; }
+.projects { display:grid; gap:1.75rem; }
 .project-card {
     background:var(--bg2); border:1px solid var(--border); border-radius:16px;
-    overflow:hidden; display:grid; grid-template-columns:1fr 1fr;
-    transition:var(--ease);
+    overflow:hidden; display:grid; grid-template-columns:1fr 1fr; transition:var(--ease);
 }
 .project-card:hover { border-color:rgba(99,102,241,.3); transform:translateY(-4px); box-shadow:0 20px 60px rgba(0,0,0,.4); }
 .project-img { position:relative; overflow:hidden; }
@@ -99,22 +112,28 @@ header {
 .project-overlay {
     position:absolute; inset:0;
     background:linear-gradient(135deg,rgba(0,0,0,.3),rgba(0,0,0,.1));
-    display:flex; align-items:flex-end; padding:1.5rem;
+    display:flex; align-items:flex-end; padding:1.25rem;
 }
-.project-label { background:rgba(0,0,0,.7); backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,.15); padding:.3rem .75rem; border-radius:50px; font-size:.7rem; font-weight:700; color:rgba(255,255,255,.85); letter-spacing:.08em; text-transform:uppercase; }
-.project-body { padding:2.5rem 3rem; display:flex; flex-direction:column; justify-content:center; }
-.project-tag { font-size:.72rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; margin-bottom:.75rem; }
-.project-title { font-size:1.6rem; font-weight:800; color:var(--white); margin-bottom:.75rem; letter-spacing:-.01em; }
-.project-desc { color:var(--text-m); font-size:.93rem; line-height:1.7; margin-bottom:1.75rem; }
-.project-features { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2rem; }
-.feat { background:rgba(255,255,255,.05); border:1px solid var(--border); padding:.3rem .75rem; border-radius:50px; font-size:.75rem; color:var(--text-m); }
-.project-link { display:inline-flex; align-items:center; gap:.5rem; color:var(--white); font-weight:700; font-size:.9rem; padding:.75rem 1.5rem; border-radius:var(--radius); transition:var(--ease); width:fit-content; }
+.project-badge {
+    background:rgba(0,0,0,.7); backdrop-filter:blur(4px);
+    border:1px solid rgba(255,255,255,.15); padding:.25rem .65rem;
+    border-radius:50px; font-size:.68rem; font-weight:700;
+    color:rgba(255,255,255,.85); letter-spacing:.07em; text-transform:uppercase;
+}
+.project-body { padding:2.25rem 2.5rem; display:flex; flex-direction:column; justify-content:center; }
+.project-tag   { font-size:.7rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; margin-bottom:.6rem; }
+.project-title { font-size:1.4rem; font-weight:800; color:var(--white); margin-bottom:.6rem; letter-spacing:-.01em; }
+.project-desc  { color:var(--text-m); font-size:.88rem; line-height:1.7; margin-bottom:1.5rem; }
+.project-feats { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.75rem; }
+.feat { background:rgba(255,255,255,.05); border:1px solid var(--border); padding:.25rem .65rem; border-radius:50px; font-size:.72rem; color:var(--text-m); }
+.project-link {
+    display:inline-flex; align-items:center; gap:.5rem; color:var(--white);
+    font-weight:700; font-size:.88rem; padding:.65rem 1.35rem;
+    border-radius:var(--radius); transition:var(--ease); width:fit-content;
+}
 .project-link:hover { transform:translateX(4px); }
 
-/* Color accents per project */
-.c-pink   { color:#f472b6; }
-.c-blue   { color:#60a5fa; }
-.c-amber  { color:#fbbf24; }
+.c-pink  { color:#f472b6; } .c-blue  { color:#60a5fa; } .c-amber { color:#fbbf24; }
 .bg-pink  { background:rgba(244,114,182,.1); border-color:rgba(244,114,182,.2); }
 .bg-blue  { background:rgba(96,165,250,.1);  border-color:rgba(96,165,250,.2); }
 .bg-amber { background:rgba(251,191,36,.1);  border-color:rgba(251,191,36,.2); }
@@ -122,94 +141,68 @@ header {
 .link-blue  { background:linear-gradient(135deg,#1a3a5c,#2563eb); }
 .link-amber { background:linear-gradient(135deg,#92400e,#c0392b); }
 
-/* TESTIMONIALS */
-.testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
-.testi-card { background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; }
-.testi-stars { color:#fbbf24; font-size:.9rem; margin-bottom:.75rem; letter-spacing:.1em; }
-.testi-text { color:var(--text); font-size:.93rem; line-height:1.7; margin-bottom:1.25rem; font-style:italic; }
-.testi-author { display:flex; align-items:center; gap:.75rem; }
-.testi-avatar-placeholder { width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent2)); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.85rem; color:var(--white); flex-shrink:0; }
-.testi-name { font-weight:700; font-size:.85rem; color:var(--white); }
-.testi-sub  { font-size:.75rem; color:var(--text-m); }
-.testi-placeholder { border:2px dashed rgba(99,102,241,.3); background:rgba(99,102,241,.04); text-align:center; padding:3rem 2rem; }
-.testi-placeholder i { font-size:2rem; color:rgba(99,102,241,.4); margin-bottom:1rem; }
-.testi-placeholder h4 { color:var(--white); margin-bottom:.5rem; font-size:1rem; }
-.testi-placeholder p { color:var(--text-m); font-size:.85rem; margin:0; }
+/* ── ÜBER MICH ── */
+.about-wrap {
+    background:var(--bg2); border:1px solid var(--border);
+    border-radius:16px; padding:3rem; display:grid;
+    grid-template-columns:auto 1fr; gap:2.5rem; align-items:center;
+}
+.about-photo {
+    width:130px; height:130px; border-radius:50%; object-fit:cover;
+    border:3px solid rgba(99,102,241,.35); flex-shrink:0;
+}
+.about-text h3 { font-size:1.25rem; font-weight:800; color:var(--white); margin-bottom:.5rem; }
+.about-text p  { color:var(--text-m); font-size:.93rem; line-height:1.75; margin-bottom:.75rem; }
+.about-text p:last-of-type { margin-bottom:1rem; }
+.chips { display:flex; flex-wrap:wrap; gap:.4rem; }
+.chip {
+    background:rgba(99,102,241,.1); border:1px solid rgba(99,102,241,.25);
+    color:#a5b4fc; padding:.25rem .75rem; border-radius:50px;
+    font-size:.75rem; font-weight:600;
+}
 
-/* ABOUT ME */
-.about-grid { display:grid; grid-template-columns:auto 1fr; gap:3rem; align-items:center; }
-.about-photo { width:180px; height:180px; border-radius:50%; object-fit:cover; border:3px solid rgba(99,102,241,.4); flex-shrink:0; }
-.about-text-block p { color:var(--text-m); font-size:.97rem; line-height:1.75; }
-.about-text-block p:last-child { margin:0; }
-.about-chips { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.25rem; }
-.chip { background:rgba(99,102,241,.1); border:1px solid rgba(99,102,241,.25); color:#a5b4fc; padding:.3rem .85rem; border-radius:50px; font-size:.78rem; font-weight:600; }
+/* ── KONTAKT ── */
+.contact-wrap {
+    text-align:center; max-width:500px; margin:0 auto;
+}
+.contact-wrap h2 { font-size:clamp(1.5rem,3.5vw,2.2rem); font-weight:800; color:var(--white); margin-bottom:.75rem; }
+.contact-wrap p  { color:var(--text-m); font-size:1rem; margin-bottom:2rem; }
+.contact-links { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
 
-/* PROCESS */
-.process-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem; }
-.process-card { background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:2rem 1.75rem; }
-.process-num { font-size:2rem; font-weight:800; color:rgba(99,102,241,.3); font-variant-numeric:tabular-nums; margin-bottom:1rem; line-height:1; }
-.process-card h3 { font-size:1rem; color:var(--white); margin-bottom:.5rem; }
-.process-card p { font-size:.85rem; color:var(--text-m); margin:0; }
+/* ── FOOTER ── */
+footer { border-top:1px solid var(--border); padding:1.75rem 0; text-align:center; }
+footer p { color:var(--text-m); font-size:.78rem; margin:0; }
 
-/* FEATURES GRID */
-.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
-.feature { background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; }
-.feature i { font-size:1.4rem; color:var(--accent); margin-bottom:.85rem; }
-.feature h4 { font-size:.95rem; color:var(--white); margin-bottom:.3rem; }
-.feature p { font-size:.82rem; color:var(--text-m); margin:0; }
-
-/* PRICING */
-.pricing-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
-.price-card { background:var(--bg2); border:1px solid var(--border); border-radius:16px; padding:2.5rem 2rem; }
-.price-card.featured { border-color:var(--accent); background:rgba(99,102,241,.05); position:relative; }
-.price-card.featured::before { content:'Empfohlen'; position:absolute; top:-1px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--accent),var(--accent2)); color:var(--white); font-size:.72rem; font-weight:700; padding:.3rem .9rem; border-radius:0 0 8px 8px; letter-spacing:.07em; }
-.price-name { font-size:.8rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--text-m); margin-bottom:.5rem; }
-.price-amount { font-size:3rem; font-weight:800; color:var(--white); line-height:1; }
-.price-amount span { font-size:1rem; color:var(--text-m); font-weight:400; }
-.price-desc { color:var(--text-m); font-size:.85rem; margin:1rem 0 1.5rem; line-height:1.6; }
-.price-items { list-style:none; display:flex; flex-direction:column; gap:.6rem; margin-bottom:2rem; }
-.price-items li { display:flex; align-items:center; gap:.6rem; font-size:.87rem; color:var(--text); }
-.price-items li i { color:var(--green); font-size:.75rem; }
-.price-items li.off { color:var(--text-m); }
-.price-items li.off i { color:#4b5563; }
-.price-btn { display:block; text-align:center; padding:.85rem; border-radius:var(--radius); font-weight:700; font-size:.9rem; transition:var(--ease); }
-.price-btn-accent { background:linear-gradient(135deg,var(--accent),var(--accent2)); color:var(--white); }
-.price-btn-accent:hover { opacity:.9; transform:translateY(-1px); }
-.price-btn-ghost { background:rgba(255,255,255,.05); color:var(--text); border:1px solid var(--border); }
-.price-btn-ghost:hover { background:rgba(255,255,255,.1); color:var(--white); }
-
-/* CTA FOOTER */
-.cta-section { background:var(--bg2); border-radius:24px; padding:5rem 3rem; text-align:center; border:1px solid var(--border); margin:0 0 4rem; }
-.cta-section h2 { font-size:clamp(1.8rem,4vw,3rem); font-weight:800; color:var(--white); margin-bottom:1rem; }
-.cta-section p  { color:var(--text-m); font-size:1.05rem; margin-bottom:2rem; }
-
-footer { border-top:1px solid var(--border); padding:2rem 0; text-align:center; }
-footer p { color:var(--text-m); font-size:.82rem; margin:0; }
-
-/* RESPONSIVE */
-@media(max-width:900px) {
+/* ── RESPONSIVE ── */
+@media(max-width:860px) {
     .project-card { grid-template-columns:1fr; }
-    .project-img  { height:250px; }
-    .about-grid   { grid-template-columns:1fr; text-align:center; }
-    .about-photo  { margin:0 auto; }
-    .about-chips  { justify-content:center; }
+    .project-img  { height:220px; }
+    .project-body { padding:1.75rem 2rem; }
 }
 @media(max-width:600px) {
-    .stats-row { gap:2rem; }
-    .project-body { padding:2rem; }
+    .about-wrap { grid-template-columns:1fr; text-align:center; }
+    .about-photo { margin:0 auto; }
+    .chips { justify-content:center; }
     .header-tel { display:none; }
+    .hero { padding:4rem 0 3.5rem; }
+    .section { padding:3.5rem 0; }
 }
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="container">
     <div class="header-inner">
-      <div class="site-logo">web<span>design</span>.studio</div>
+      <div class="site-logo">christian<span>.</span>design</div>
       <div class="header-right">
-        <a href="tel:+4917687309377" class="header-tel"><i class="fas fa-phone-alt"></i>+49 176 87309377</a>
-        <a href="mailto:christian.der.dietrich@web.de" class="header-cta">Kontakt aufnehmen</a>
+        <a href="tel:+4917687309377" class="header-tel">
+          <i class="fas fa-phone-alt"></i>+49 176 87309377
+        </a>
+        <a href="mailto:christian.der.dietrich@web.de" class="header-mail">
+          Kontakt aufnehmen
+        </a>
       </div>
     </div>
   </div>
@@ -218,18 +211,14 @@ footer p { color:var(--text-m); font-size:.82rem; margin:0; }
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero-badge"><i class="fas fa-check-circle"></i>Portfolio · Demo-Projekte</div>
-    <h1>Websites, die<br><span>Kunden gewinnen.</span></h1>
-    <p>Professionelles Webdesign für lokale Kleinunternehmen – responsiv, modern, bereit für Google. Sehen Sie sich meine Beispiel-Projekte an.</p>
-    <div class="hero-btns">
-      <a href="#projekte" class="btn btn-accent"><i class="fas fa-arrow-down"></i>Projekte ansehen</a>
-      <a href="mailto:christian.der.dietrich@web.de" class="btn btn-ghost"><i class="fas fa-envelope"></i>Anfrage senden</a>
-    </div>
-    <div class="stats-row">
-      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Demo-Websites</div></div>
-      <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Unterseiten</div></div>
-      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Responsiv & SEO-ready</div></div>
-      <div class="stat"><div class="stat-num">0</div><div class="stat-label">Server-Abhängigkeiten</div></div>
+    <div class="hero-inner">
+      <div class="hero-label"><i class="fas fa-map-marker-alt"></i>Webdesign · Bayreuth</div>
+      <h1>Websites, die<br><span>Kunden gewinnen.</span></h1>
+      <p>Ich erstelle professionelle Websites für lokale Kleinunternehmen – modern, responsiv und ohne unnötige Kosten. Unten sehen Sie drei echte Beispiele.</p>
+      <div class="hero-btns">
+        <a href="#projekte" class="btn btn-accent"><i class="fas fa-arrow-down"></i>Beispiele ansehen</a>
+        <a href="#kontakt" class="btn btn-ghost"><i class="fas fa-envelope"></i>Kontakt</a>
+      </div>
     </div>
   </div>
 </section>
@@ -237,32 +226,29 @@ footer p { color:var(--text-m); font-size:.82rem; margin:0; }
 <!-- PROJEKTE -->
 <section class="section" id="projekte">
   <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <p style="font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem">BEISPIEL-PROJEKTE</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;color:var(--white);margin-bottom:.75rem">Drei Branchen – drei Stile</h2>
-      <p style="color:var(--text-m);max-width:560px;margin:0 auto">Jede Demo-Website ist vollständig fertig und zeigt echtes, branchenspezifisches Design. So könnte die Website Ihres Kunden aussehen.</p>
-    </div>
+    <span class="section-label">Beispiel-Projekte</span>
+    <h2 class="section-title">Drei Branchen – drei Stile</h2>
+    <p class="section-sub">Vollständig fertige Demo-Websites. Jede Seite zeigt, wie ein echter Auftritt für Ihren Betrieb aussehen könnte.</p>
+
     <div class="projects">
 
       <!-- Friseursalon -->
       <div class="project-card">
         <div class="project-img">
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&h=500&q=80" alt="Friseursalon Website Preview">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&h=500&q=80" alt="Friseursalon Demo">
           <div class="project-overlay">
-            <span class="project-label">5 Seiten · Galerie · Terminbuchung</span>
+            <span class="project-badge">5 Seiten · Galerie · Terminbuchung</span>
           </div>
         </div>
         <div class="project-body">
           <p class="project-tag c-pink">✦ Friseursalon</p>
-          <h2 class="project-title">Haar & Stil München</h2>
-          <p class="project-desc">Elegantes Premium-Design in Dunkelgold – für Salons, die mehr als einen Haarschnitt verkaufen. Mit vollständiger Preisliste, Foto-Galerie und Lightbox.</p>
-          <div class="project-features">
+          <h3 class="project-title">Haar & Stil München</h3>
+          <p class="project-desc">Elegantes Design in Dunkelgold für Salons, die Qualität ausstrahlen. Mit Preisliste, Foto-Galerie und Lightbox.</p>
+          <div class="project-feats">
             <span class="feat bg-pink">Preisliste</span>
             <span class="feat bg-pink">Foto-Galerie</span>
-            <span class="feat bg-pink">Lightbox</span>
             <span class="feat bg-pink">WhatsApp-Button</span>
             <span class="feat bg-pink">Kontaktformular</span>
-            <span class="feat bg-pink">Google Maps</span>
           </div>
           <a href="friseursalon/index.html" class="project-link link-pink" target="_blank">
             Demo ansehen <i class="fas fa-arrow-right"></i>
@@ -270,24 +256,22 @@ footer p { color:var(--text-m); font-size:.82rem; margin:0; }
         </div>
       </div>
 
-      <!-- Elektriker (umgekehrt) -->
+      <!-- Elektriker -->
       <div class="project-card" style="direction:rtl">
         <div class="project-img" style="direction:ltr">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&h=500&q=80" alt="Elektriker Website Preview">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&h=500&q=80" alt="Elektriker Demo">
           <div class="project-overlay">
-            <span class="project-label">4 Seiten · Notdienst · Festpreise</span>
+            <span class="project-badge">4 Seiten · Notdienst · Festpreise</span>
           </div>
         </div>
         <div class="project-body" style="direction:ltr">
           <p class="project-tag c-blue">⚡ Handwerksbetrieb</p>
-          <h2 class="project-title">Blitz Elektro GmbH Hamburg</h2>
-          <p class="project-desc">Vertrauensstarkes Design in Navy & Amber – für Handwerker, die sofort seriös wirken. Notdienst-CTA, Zertifikats-Sektion und detaillierte Leistungsübersicht.</p>
-          <div class="project-features">
-            <span class="feat bg-blue">24/7 Notdienst-CTA</span>
+          <h3 class="project-title">Blitz Elektro GmbH Hamburg</h3>
+          <p class="project-desc">Vertrauensstarkes Design für Handwerker. Mit 24/7-Notdienst-CTA, Zertifikats-Sektion und Leistungsübersicht.</p>
+          <div class="project-feats">
+            <span class="feat bg-blue">Notdienst-CTA</span>
             <span class="feat bg-blue">Leistungsdetails</span>
-            <span class="feat bg-blue">Zertifikate</span>
             <span class="feat bg-blue">Angebot-Formular</span>
-            <span class="feat bg-blue">Team-Seite</span>
             <span class="feat bg-blue">Google Maps</span>
           </div>
           <a href="elektriker/index.html" class="project-link link-blue" target="_blank">
@@ -299,22 +283,20 @@ footer p { color:var(--text-m); font-size:.82rem; margin:0; }
       <!-- Restaurant -->
       <div class="project-card">
         <div class="project-img">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&h=500&q=80" alt="Restaurant Website Preview">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&h=500&q=80" alt="Restaurant Demo">
           <div class="project-overlay">
-            <span class="project-label">5 Seiten · Speisekarte · Reservierung</span>
+            <span class="project-badge">5 Seiten · Speisekarte · Reservierung</span>
           </div>
         </div>
         <div class="project-body">
           <p class="project-tag c-amber">✦ Restaurant & Café</p>
-          <h2 class="project-title">Zur Alten Mühle Freiburg</h2>
-          <p class="project-desc">Warmes, einladendes Design mit Cormorant-Typographie – für Restaurants, die Atmosphäre verkaufen. Vollständige Speisekarte, Online-Reservierung, Familiengeschichte.</p>
-          <div class="project-features">
-            <span class="feat bg-amber">Interaktive Speisekarte</span>
-            <span class="feat bg-amber">Reservierungs-Formular</span>
-            <span class="feat bg-amber">Timeline-Story</span>
-            <span class="feat bg-amber">Ambiance-Galerie</span>
+          <h3 class="project-title">Zur Alten Mühle Freiburg</h3>
+          <p class="project-desc">Warmes, einladendes Design für Restaurants. Mit vollständiger Speisekarte, Online-Reservierung und Teamvorstellung.</p>
+          <div class="project-feats">
+            <span class="feat bg-amber">Speisekarte</span>
+            <span class="feat bg-amber">Reservierung</span>
+            <span class="feat bg-amber">Familiengeschichte</span>
             <span class="feat bg-amber">Bewertungen</span>
-            <span class="feat bg-amber">Gerichte-Cards</span>
           </div>
           <a href="restaurant/index.html" class="project-link link-amber" target="_blank">
             Demo ansehen <i class="fas fa-arrow-right"></i>
@@ -326,183 +308,42 @@ footer p { color:var(--text-m); font-size:.82rem; margin:0; }
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="section" id="stimmen">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <p style="font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem">KUNDENSTIMMEN</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:.75rem">Was Kunden sagen</h2>
-      <p style="color:var(--text-m);max-width:500px;margin:0 auto">Echte Erfahrungen echter Kunden – Vertrauen entsteht durch Transparenz.</p>
-    </div>
-    <div class="testi-grid">
-      <div class="testi-card testi-placeholder">
-        <i class="fas fa-comment-dots"></i>
-        <h4>Ihr Feedback könnte hier stehen</h4>
-        <p>Ich suche mein erstes Projekt zum Sonderpreis – und zeige Ihre Bewertung dann stolz an dieser Stelle.</p>
-      </div>
-      <div class="testi-card testi-placeholder">
-        <i class="fas fa-star"></i>
-        <h4>Erstes Projekt zum Aktionspreis</h4>
-        <p>Professionelle Website zu einem fairen Einführungspreis – damit wir beide eine Referenz gewinnen.</p>
-      </div>
-      <div class="testi-card testi-placeholder">
-        <i class="fas fa-handshake"></i>
-        <h4>Interesse? Melden Sie sich!</h4>
-        <p>Kostenloses Erstgespräch, konkretes Angebot innerhalb von 48h – unverbindlich und kostenlos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WAS STECKT DRIN -->
-<section class="section" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)" id="leistungen">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <p style="font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem">INBEGRIFFEN</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:.75rem">Was jede Website mitbringt</h2>
-    </div>
-    <div class="features">
-      <div class="feature"><i class="fas fa-mobile-alt"></i><h4>100% Responsiv</h4><p>Mobile-first Design, perfekt auf jedem Gerät.</p></div>
-      <div class="feature"><i class="fas fa-search"></i><h4>SEO-Grundlagen</h4><p>Meta-Tags, saubere Struktur, schnelle Ladezeiten.</p></div>
-      <div class="feature"><i class="fas fa-bolt"></i><h4>Schnell & leichtgewichtig</h4><p>Reines HTML/CSS/JS – kein Framework, kein CMS.</p></div>
-      <div class="feature"><i class="fas fa-cloud-upload-alt"></i><h4>GitHub Pages ready</h4><p>Kostenfreies Hosting in Minuten eingerichtet.</p></div>
-      <div class="feature"><i class="fas fa-phone-alt"></i><h4>Klare Call-to-Actions</h4><p>Anruf, WhatsApp, Formular – je nach Branche.</p></div>
-      <div class="feature"><i class="fas fa-palette"></i><h4>Einzigartiges Design</h4><p>Kein Template-Feeling – individuell pro Branche.</p></div>
-      <div class="feature"><i class="fas fa-map-marker-alt"></i><h4>Lokaler Charakter</h4><p>Ortsname, regionale Bilder, authentische Inhalte.</p></div>
-      <div class="feature"><i class="fas fa-lock"></i><h4>DSGVO-konform</h4><p>Impressum, Datenschutz, Cookie-freie Bilder.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- WIE ES LÄUFT -->
-<section class="section" id="prozess">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <p style="font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem">DER PROZESS</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:.75rem">Von der Idee zur fertigen Website</h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-card">
-        <div class="process-num">01</div>
-        <h3>Erstgespräch</h3>
-        <p>Kostenloses 30-Min-Gespräch – ich lerne Ihr Unternehmen und Ihre Ziele kennen.</p>
-      </div>
-      <div class="process-card">
-        <div class="process-num">02</div>
-        <h3>Konzept & Angebot</h3>
-        <p>Innerhalb von 48h erhalten Sie ein konkretes Konzept mit Struktur und Festpreis.</p>
-      </div>
-      <div class="process-card">
-        <div class="process-num">03</div>
-        <h3>Design & Entwicklung</h3>
-        <p>Nach Freigabe beginne ich sofort – Sie erhalten regelmäßige Updates.</p>
-      </div>
-      <div class="process-card">
-        <div class="process-num">04</div>
-        <h3>Launch & Hosting</h3>
-        <p>Ich richte Domain, Hosting (GitHub Pages oder Netlify) und SSL kostenlos ein.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ÜBER MICH -->
-<section class="section" id="ueber-mich">
+<section class="section" id="ueber-mich" style="background:rgba(255,255,255,.02);border-top:1px solid var(--border)">
   <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <p style="font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem">ÜBER MICH</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:.75rem">Ein Gesicht hinter der Website</h2>
-    </div>
-    <div class="about-grid">
+    <span class="section-label">Über mich</span>
+    <div class="about-wrap">
       <img
-        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80"
-        alt="Christian Dietrich – Webdesigner"
+        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80"
+        alt="Christian Dietrich – Webdesigner aus Bayreuth"
         class="about-photo">
-      <div class="about-text-block">
-        <p>Hey, ich bin <strong style="color:var(--white)">Christian</strong> – junger Webdesigner aus <strong style="color:var(--white)">Bayreuth</strong>. Ich habe mich darauf spezialisiert, lokalen Kleinunternehmen zu einem professionellen Auftritt im Internet zu verhelfen.</p>
-        <p>Viele Betriebe in meiner Region haben entweder gar keine Website oder eine, die schlechter wirkt als das Unternehmen selbst. Das will ich ändern – mit modernem Design, fairen Preisen und ohne unnötigen Schnickschnack.</p>
-        <p>Kein Agentur-Overhead, kein Stundentakt. Sie bekommen eine fertige Website zum Festpreis – und einen Ansprechpartner, der wirklich erreichbar ist.</p>
-        <div class="about-chips">
+      <div class="about-text">
+        <h3>Christian Dietrich</h3>
+        <p>Ich bin Webdesigner aus Bayreuth und helfe lokalen Kleinunternehmen zu einem professionellen Auftritt im Internet. Viele Betriebe in der Region haben keine Website – oder eine, die ihnen schadet statt hilft.</p>
+        <p>Ich mache das anders: kein Agentur-Overhead, kein Stundentakt, kein Kleingedrucktes. Sie bekommen eine fertige, moderne Website zum Festpreis – und einen Ansprechpartner, der wirklich erreichbar ist.</p>
+        <div class="chips">
           <span class="chip">📍 Bayreuth</span>
-          <span class="chip">💻 HTML · CSS · JavaScript</span>
+          <span class="chip">💻 HTML · CSS · JS</span>
           <span class="chip">📱 Mobile-first</span>
-          <span class="chip">⚡ Schnelle Lieferung</span>
           <span class="chip">🤝 Festpreise</span>
+          <span class="chip">⚡ Schnelle Umsetzung</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PREISE -->
-<section class="section" style="background:var(--bg2);border-top:1px solid var(--border)" id="preise">
+<!-- KONTAKT -->
+<section class="section" id="kontakt">
   <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <p style="font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem">PREISE</p>
-      <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:.75rem">Transparente Festpreise</h2>
-      <p style="color:var(--text-m);max-width:500px;margin:0 auto">Keine versteckten Kosten, keine Stundenabrechnung. Sie wissen vorher, was Sie zahlen.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <p class="price-name">Starter</p>
-        <p class="price-amount">499 <span>€</span></p>
-        <p class="price-desc">Perfekt für den Einstieg – eine professionelle Visitenkarte im Web.</p>
-        <ul class="price-items">
-          <li><i class="fas fa-check"></i>3 Unterseiten (Start, Leistungen, Kontakt)</li>
-          <li><i class="fas fa-check"></i>Responsives Design</li>
-          <li><i class="fas fa-check"></i>Kontaktformular</li>
-          <li><i class="fas fa-check"></i>Google Maps</li>
-          <li><i class="fas fa-check"></i>Hosting-Einrichtung</li>
-          <li class="off"><i class="fas fa-times"></i>Galerie</li>
-          <li class="off"><i class="fas fa-times"></i>Blog / Speisekarte</li>
-        </ul>
-        <a href="mailto:christian.der.dietrich@web.de" class="price-btn price-btn-ghost">Anfragen</a>
-      </div>
-      <div class="price-card featured">
-        <p class="price-name">Professional</p>
-        <p class="price-amount">899 <span>€</span></p>
-        <p class="price-desc">Alles, was ein lokales Kleinunternehmen für seinen Webauftritt braucht.</p>
-        <ul class="price-items">
-          <li><i class="fas fa-check"></i>5 Unterseiten</li>
-          <li><i class="fas fa-check"></i>Individuelles Design</li>
-          <li><i class="fas fa-check"></i>Galerie / Lightbox</li>
-          <li><i class="fas fa-check"></i>Speisekarte oder Preisliste</li>
-          <li><i class="fas fa-check"></i>Buchungs-/Reservierungsformular</li>
-          <li><i class="fas fa-check"></i>WhatsApp & Social Integration</li>
-          <li><i class="fas fa-check"></i>SEO & Domain-Einrichtung</li>
-        </ul>
-        <a href="mailto:christian.der.dietrich@web.de" class="price-btn price-btn-accent">Anfragen</a>
-      </div>
-      <div class="price-card">
-        <p class="price-name">Business</p>
-        <p class="price-amount">ab 1.499 <span>€</span></p>
-        <p class="price-desc">Für ambitionierte Unternehmen mit besonderen Anforderungen.</p>
-        <ul class="price-items">
-          <li><i class="fas fa-check"></i>Bis zu 10 Seiten</li>
-          <li><i class="fas fa-check"></i>Mehrsprachig (DE/EN)</li>
-          <li><i class="fas fa-check"></i>Online-Shop (Shopify/WooCommerce)</li>
-          <li><i class="fas fa-check"></i>CMS-Integration</li>
-          <li><i class="fas fa-check"></i>Google Analytics</li>
-          <li><i class="fas fa-check"></i>6 Monate Support</li>
-          <li><i class="fas fa-check"></i>Laufende Pflege optional</li>
-        </ul>
-        <a href="mailto:christian.der.dietrich@web.de" class="price-btn price-btn-ghost">Anfragen</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section">
-  <div class="container">
-    <div class="cta-section">
-      <h2>Bereit für Ihre eigene Website?</h2>
-      <p>Schreiben Sie mir – das erste Gespräch ist kostenlos und unverbindlich.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="mailto:christian.der.dietrich@web.de" class="btn btn-accent" style="font-size:1rem;padding:1rem 2.5rem">
-          <i class="fas fa-envelope"></i>E-Mail schreiben
+    <div class="contact-wrap">
+      <h2>Interesse? Schreiben Sie mir.</h2>
+      <p>Das erste Gespräch ist kostenlos und unverbindlich. Ich melde mich innerhalb von 24 Stunden.</p>
+      <div class="contact-links">
+        <a href="mailto:christian.der.dietrich@web.de" class="btn btn-accent">
+          <i class="fas fa-envelope"></i>christian.der.dietrich@web.de
         </a>
-        <a href="tel:+4917687309377" class="btn btn-ghost" style="font-size:1rem;padding:1rem 2.5rem">
+        <a href="tel:+4917687309377" class="btn btn-ghost">
           <i class="fas fa-phone-alt"></i>+49 176 87309377
         </a>
       </div>
@@ -512,7 +353,7 @@ footer p { color:var(--text-m); font-size:.82rem; margin:0; }
 
 <footer>
   <div class="container">
-    <p>Portfolio · Webdesign für lokale Kleinunternehmen · Alle Demo-Inhalte sind fiktiv</p>
+    <p>© 2025 Christian Dietrich · Webdesign Bayreuth · Alle Demo-Inhalte sind fiktiv</p>
   </div>
 </footer>
 
