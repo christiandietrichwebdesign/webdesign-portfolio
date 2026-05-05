@@ -325,6 +325,9 @@ textarea.form-control { resize:vertical; min-height:110px; }
     .res-float span { display:none; }
     .res-float { padding:.85rem; border-radius:50%; }
     .timeline-section { grid-template-columns:1fr; gap:2.5rem; }
+    .menu-item { flex-wrap:wrap; }
+    .about-split { grid-template-columns:1fr; gap:2.5rem; }
+    .about-badge { right:.5rem; bottom:.5rem; }
 }
 @media(max-width:480px) {
     .container { padding:0 1rem; }

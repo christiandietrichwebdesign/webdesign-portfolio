@@ -339,6 +339,8 @@ textarea.form-control { resize:vertical; min-height:120px; }
     .gallery-grid { columns:2 180px; }
     .footer-bottom { flex-direction:column; text-align:center; }
     .footer-legal  { flex-wrap:wrap; justify-content:center; }
+    .service-row { flex-wrap:wrap; gap:.5rem; }
+    .stats-row { grid-template-columns:repeat(2,1fr); }
 }
 @media(max-width:480px) {
     .gallery-grid { columns:1; }
